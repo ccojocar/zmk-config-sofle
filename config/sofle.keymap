@@ -84,7 +84,7 @@
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &none  &none      &none  &none   &none  &none
 &trans     &none        &none        &none        &none        &none                         &none  &none      &none  &none   &none  &none
-&trans     &none        &none        &RESET       &BOOLOADER   &none                         &none  &BOOLOADER &RESET &none   &none  &none 
+&trans     &none        &none        &SYS_RESET       &BOOLOADER   &none                         &none  &BOOLOADER &SYS_RESET &none   &none  &none 
 &trans     &none        &none        &none        &none        &none       &to 1  &to 0      &none  &none      &none  &none   &none  &trans
                         &trans       &trans       &trans       &trans      &trans  &trans  &trans    &trans    &trans   &trans
             >;
