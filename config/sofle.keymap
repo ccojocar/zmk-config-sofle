@@ -59,14 +59,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |   F12 |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8  |  F9 |  F10 |  F11  |
 // |       |  !  |  `  |  \   |  (   |  )   |                   | MUTE | HOME  | END  |  C_VOL_DN  | C_VOL_UP |    |
-// |       |  ~  |  =  |  _   |  -   |  +   |                   | <-   |  V    |  ^   | ->|      |    |       |
-// |       |  ?  |  ^  |  |   |  &   | *    |    2   |  |   0   | DEL |  PGDN|  PGUP|     |      |    |
-//               |     |      |      |      |        |  |       |     |      |      |     |
+// |       |  ~  |  =  |  _   |  -   |  +   |                   | <-   |  V    |  ^   | -> | PSCRN |    |       |
+// |       |  ?  |  ^  |  |   |  &   | *    |    2   |  |   0   | CAPS |  PGDN|  PGUP| DEL |       |    |
+//               |     |      |      |      |        |  |       |      |      |      |     |
             bindings = <
 &kp F12   &kp F1    &kp F2     &kp F3      &kp F4    &kp F5                   &kp F6    &kp F7    &kp F8    &kp F9    &kp F10  &kp F11
 &trans    &kp EXCL  &kp GRAVE  &kp BSLH    &kp LPAR  &kp RPAR                 &kp C_MUTE &kp HOME  &kp END   &kp C_VOL_DN &kp C_VOL_UP &none
-&trans    &kp TILDE  &kp EQUAL  &kp UNDER   &kp MINUS &kp PLUS                 &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none    &none
-&trans    &kp QMARK  &kp CARET  &kp PIPE    &kp AMPS  &kp STAR     &to 2  &to 0   &kp DEL   &kp PG_DN &kp PG_UP &none     &none    &trans
+&trans    &kp TILDE  &kp EQUAL  &kp UNDER   &kp MINUS &kp PLUS                 &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &PSCRN    &none
+&trans    &kp QMARK  &kp CARET  &kp PIPE    &kp AMPS  &kp STAR     &to 2  &to 0   &kp CAPS   &kp PG_DN &kp PG_UP &DEL     &none    &trans
                     &trans     &trans   &trans    &trans  &trans   &trans  &trans  &trans   &trans    &trans
             >;
 
