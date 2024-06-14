@@ -78,13 +78,13 @@
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |       |      |      |       |       |      |                |      |      |       |      |       |       |
-// |       |      |      | RESET |  BOOTLOADER   |      |         |      |  BOOTLOADER   |   RESET      |      |       |       |
+// |       |      |      |       |  BOOTLOADER  |      |         |      |  BOOTLOADER |      |       |       |       |
 // |       |      |      |       |       |      |   1  |  |  0   |      |      |       |      |       |       |
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &none  &none      &none  &none   &none  &none
 &trans     &none        &none        &none        &none        &none                         &none  &none      &none  &none   &none  &none
-&trans     &none        &none        &RESET       &BOOTLOADER  &none                         &none  &BOOTLOADER &RESET &none   &none  &none 
+&trans     &none        &none        &none        &BOOTLOADER  &none                         &none  &BOOTLOADER &none &none   &none  &none 
 &trans     &none        &none        &none        &none        &none       &to 1  &to 0      &none  &none      &none  &none   &none  &trans
                         &trans       &trans       &trans       &trans      &trans  &trans  &trans    &trans    &trans   &trans
             >;
